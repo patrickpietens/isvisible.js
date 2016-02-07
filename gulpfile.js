@@ -16,12 +16,12 @@ function onError() {
 gulp.task('default', () => {
     let myProduction = process.env.NODE_ENV === 'production';
 
-    let mySource = 'src/index.js',
+    let mySource = 'src/isVisible.js',
         myDestination = 'dist';
 
     let myUmdOptions = {
         templateName: 'returnExports',
-        exports: (file) => 'inViewport',
+        exports: (file) => 'isVisible',
     };
 
     let myBabelOptions = {
