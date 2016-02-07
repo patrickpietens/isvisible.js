@@ -21,9 +21,7 @@ gulp.task('default', () => {
 
     let myUmdOptions = {
         templateName: 'returnExports',
-        exports: (file) => {
-            return 'isInViewport';
-        },
+        exports: (file) => 'inViewport',
     };
 
     let myBabelOptions = {

@@ -1,22 +1,22 @@
 {
-  "name": "inviewportjs",
-  "version": "1.0.1",
-  "description": "Function for checking if an element is visible in the viewport",
+  "name": "visiblejs",
+  "version": "1.0.0",
+  "description": "Function to check if an element is visible in the viewport",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/patrickpietens/inviewportjs.git"
+    "url": "git+https://github.com/patrickpietens/visiblejs.git"
   },
   "keywords": [],
   "author": "Patrick Pietens <hello@patrickpietens.com> (http://patrickpietens.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/patrickpietens/inviewportjs/issues"
+    "url": "https://github.com/patrickpietens/visiblejs/issues"
   },
-  "homepage": "https://github.com/patrickpietens/inviewportjs#readme",
+  "homepage": "https://github.com/patrickpietens/visiblejs#readme",
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",
     "gulp": "^3.9.0",
