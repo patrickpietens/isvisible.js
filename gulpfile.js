@@ -1,6 +1,7 @@
 'use strict';
 
-var gulp = require('gulp'),
+var babel = require('gulp-babel'),
+    gulp = require('gulp'),
     gulpif = require('gulp-if'),
     notify = require('gulp-notify'),
     uglify = require('gulp-uglify'),
@@ -18,15 +19,20 @@ gulp.task('default', () => {
     let mySource = 'src/index.js',
         myDestination = 'dist';
 
-    let myOptions = {
+    let myUmdOptions = {
         templateName: 'returnExports',
         exports: (file) => {
             return 'isInViewport';
         },
     };
 
+    let myBabelOptions = {
+        presets: ['es2015'],
+    };
+
     return gulp.src(mySource)
-        .pipe(umd(myOptions)).on('error', onError.bind(this))
+        .pipe(babel(myBabelOptions))
+        .pipe(umd(myUmdOptions)).on('error', onError.bind(this))
         .pipe(gulpif(myProduction, uglify())).on('error', onError.bind(this))
         .pipe(gulp.dest(myDestination));
 });
