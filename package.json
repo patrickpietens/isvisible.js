@@ -1,6 +1,6 @@
 {
   "name": "visiblejs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Function to check if an element is visible in the viewport",
   "main": "dist/isVisible.js",
   "scripts": {
