@@ -29,8 +29,10 @@ function isVisible(element, offset = 0) {
 		myLeft = offset;
 
 	let myVisible =
-		(top <= myTop && bottom >= myBottom) &&
-		(right <= right && left >= left);
+		top <= myTop &&
+		bottom >= myBottom &&
+		right <= myRight &&
+		left >= myLeft;
 
 	return myVisible;
 };
