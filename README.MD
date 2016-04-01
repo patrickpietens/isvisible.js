@@ -3,10 +3,10 @@ Check if a DOM Node is visible and fully contained in the current viewport
 
 ## Example
 ```javascript
-import inViewport from 'js-inviewport';
+import isVisible from 'isvisible.js';
 
 let myElement = document.getElementById('foobar');
-if (inViewport(myElement)) {
+if (isVisible(myElement)) {
     console.log('visible');
 }
 ```
