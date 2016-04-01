@@ -16,7 +16,7 @@ function onError() {
 gulp.task('default', () => {
     let myProduction = process.env.NODE_ENV === 'production';
 
-    let mySource = 'src/isVisible.js',
+    let mySource = 'src/isvisible.js',
         myDestination = 'dist';
 
     let myUmdOptions = {

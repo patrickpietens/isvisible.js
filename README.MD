@@ -13,7 +13,7 @@ if (isVisible(myElement)) {
 
 ## Installation
 ```bash
-$ npm install isvisiblejs
+$ npm install isvisible.js --save
 ```
 
 ## License

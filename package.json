@@ -1,8 +1,8 @@
 {
   "name": "visiblejs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Check if a DOM Node is visible and fully contained in the current viewport",
-  "main": "dist/isVisible.js",
+  "main": "dist/isvisible.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "development": "NODE_ENV=development gulp",
