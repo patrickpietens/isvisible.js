@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/patrickpietens/visiblejs.git"
+    "url": "git+https://github.com/patrickpietens/isvisible.js.git"
   },
   "keywords": [],
   "author": "Patrick Pietens <hello@patrickpietens.com> (http://patrickpietens.com)",
