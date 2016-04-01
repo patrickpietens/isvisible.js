@@ -19,7 +19,7 @@ function isVisible(element, offset = 0) {
 		height,
 	} = element.getBoundingClientRect();
 
-	if (width === 0 && height === 0) {
+	if (width === 0 ||& height === 0) {
 		return false;
 	}
 
