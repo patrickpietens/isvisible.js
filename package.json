@@ -1,7 +1,7 @@
 {
   "name": "visiblejs",
-  "version": "1.0.2",
-  "description": "Function to check if an element is visible in the viewport",
+  "version": "1.0.3",
+  "description": "Check if a DOM Node is visible and fully contained in the current viewport",
   "main": "dist/isVisible.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
