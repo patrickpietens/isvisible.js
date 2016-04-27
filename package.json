@@ -1,6 +1,6 @@
 {
   "name": "isvisible.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Check if a DOM Node is visible and fully contained in the current viewport",
   "main": "dist/isvisible.js",
   "scripts": {

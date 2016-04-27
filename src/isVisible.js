@@ -12,25 +12,28 @@ function isVisible(element, offset = 0) {
 	}
 
 	// Get element info
-	const { top, right, bottom, left, width, height, } = element.getBoundingClientRect();
+	const boundingBox = element.getBoundingClientRect();
 
 	// If no width or height is selected return false
-	if (width === 0 || height === 0) {
+	if (boundingBox.width === 0 || boundingBox.height === 0) {
 		return false;
 	}
 
 	// Get viewport info
-	let myTop = offset,
-		myRight = (window.innerWidth || document.documentElement.clientWidth) - offset,
-		myBottom = (window.innerHeight || document.documentElement.clientHeight) - offset,
-		myLeft = offset;
+	const viewport = {
+		top: offset,
+		right: (window.innerWidth || document.documentElement.clientWidth) - offset,
+		bottom: (window.innerHeight || document.documentElement.clientHeight) - offset,
+		left: offset,
+	};
 
 	// Check if the element is visible in the viewport
-	const isVisible =
-		top >= myTop &&
-		bottom <= myBottom &&
-		right <= myRight &&
-		left >= myLeft;
+	const isVisible = !(
+		boundingBox.top >= viewport.bottom ||
+		boundingBox.bottom <= viewport.top ||
+		boundingBox.left >= viewport.right ||
+		boundingBox.right <= viewport.left
+	);
 
 	return isVisible;
 };
