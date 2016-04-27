@@ -1,6 +1,6 @@
 {
-  "name": "visiblejs",
-  "version": "1.0.5",
+  "name": "isvisible.js",
+  "version": "1.0.1",
   "description": "Check if a DOM Node is visible and fully contained in the current viewport",
   "main": "dist/isvisible.js",
   "scripts": {
@@ -16,9 +16,9 @@
   "author": "Patrick Pietens <hello@patrickpietens.com> (http://patrickpietens.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/patrickpietens/visiblejs/issues"
+    "url": "https://github.com/patrickpietens/isvisible.js/issues"
   },
-  "homepage": "https://github.com/patrickpietens/visiblejs#readme",
+  "homepage": "https://github.com/patrickpietens/isvisible.js#readme",
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",
     "gulp": "^3.9.0",
