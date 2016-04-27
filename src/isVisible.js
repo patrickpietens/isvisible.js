@@ -20,15 +20,15 @@ function isVisible(element, offset = 0) {
 	}
 
 	// Get viewport info
-	let myTop = (window.innerHeight || document.documentElement.clientHeight) - offset,
+	let myTop = offset,
 		myRight = (window.innerWidth || document.documentElement.clientWidth) - offset,
-		myBottom = offset,
+		myBottom = (window.innerHeight || document.documentElement.clientHeight) - offset,
 		myLeft = offset;
 
 	// Check if the element is visible in the viewport
 	const isVisible =
-		top <= myTop &&
-		bottom >= myBottom &&
+		top >= myTop &&
+		bottom <= myBottom &&
 		right <= myRight &&
 		left >= myLeft;
 
